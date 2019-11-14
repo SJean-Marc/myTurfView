@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-2">
+        Filter by :
+      </div>
+      <div class="col-md-4">
+        <input [(ngModel)]="listFilter" />
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Reunion</th>
+          <th scope="col">Hippodrome</th>
+          <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let reunion of filteredReunions ; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>
+            <a [routerLink]="['/races', reunion.id]">
+              {{reunion.name}}
+            </a>
+          </td>
+          <td>{{reunion.hippodrome}}</td>
+          <td>{{reunion.date | date: "dd/MM/yyyy" }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

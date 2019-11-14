@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-2">
+        Filter by :
+      </div>
+      <div class="col-md-4">
+        <input [(ngModel)]="listFilter" />
+      </div>
+    </div>
+    <div class="row">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Race</th>
+          <th scope="col">Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let race of filteredRaces ; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{race.name}}</td>
+          <td>{{race.departureTime | date: "dd/MM/yyyy" }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
