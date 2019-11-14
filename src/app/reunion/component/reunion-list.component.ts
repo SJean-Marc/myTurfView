@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {Race} from '../../race/race';
+import {Component, Input, OnInit} from '@angular/core';
+import {Race} from '../../race/model/race';
 import {Reunion} from '../model/reunion';
 import {ReunionService} from '../service/reunion.service';
 
@@ -9,6 +9,7 @@ import {ReunionService} from '../service/reunion.service';
   styleUrls: ['./reunion-list.component.scss']
 })
 export class ReunionListComponent implements OnInit {
+  @Input()
   pageTitle: string;
   reunions: Reunion[];
   filteredReunions: Reunion[];

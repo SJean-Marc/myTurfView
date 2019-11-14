@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Bill Gates"
+  },
+  {
+    "id": 2,
+    "name": "Thomas Edison"
+  },
+  {
+    "id": 3,
+    "name": "Dark Vador"
+  },
+  {
+    "id": 4,
+    "name": "Will Smith"
+  },
+  {
+    "id": 5,
+    "name": "Obi-Wan Kenobi"
+  },
+  {
+    "id": 6,
+    "name": "Luke Skywalker"
+  }
+]

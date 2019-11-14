@@ -1,4 +1,4 @@
-import {Race} from '../../race/race';
+import {Race} from '../../race/model/race';
 
 export class Reunion {
   id: number;

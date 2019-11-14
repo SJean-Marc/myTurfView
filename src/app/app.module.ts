@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RaceListComponent } from './race/race-list.component';
+import { RaceListComponent } from './race/component/race-list.component';
 import {FormsModule} from '@angular/forms';
 import { ReunionListComponent } from './reunion/component/reunion-list.component';
 import {HttpClientModule} from '@angular/common/http';

@@ -1,4 +1,4 @@
-import {Participant} from '../participant/participant';
+import {Participant} from '../../participant/participant';
 
 export class Race {
   id: string;

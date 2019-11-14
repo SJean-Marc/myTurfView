@@ -9,7 +9,7 @@ import {HttpClient} from '@angular/common/http';
 export class ReunionService {
 
   // Change to the url when api is deployed
-  private url = '/api/data.json';
+  private url = '/api/reunions.json';
   constructor(private http: HttpClient) { }
 
   getReunions(): Observable<Reunion[]> {

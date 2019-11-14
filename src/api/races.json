@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "departureTime": "2014-01-01T20:28:56.782Z",
+    "name": "C1",
+    "participants": [
+      {
+        "id": 1,
+        "name": "Bill Gates"
+      },
+      {
+        "id": 2,
+        "name": "Thomas Edison"
+      }
+    ]
+  },
+  {
+    "productId": 2,
+    "departureTime": "2014-01-01T21:35:56.782Z",
+    "name": "C2",
+    "participants": [
+      {
+        "id": 3,
+        "name": "Dark Vador"
+      },
+      {
+        "id": 4,
+        "name": "Will Smith"
+      }
+    ]
+  },
+  {
+    "productId": 3,
+    "departureTime": "2014-01-01T22:12:24.782Z",
+    "name": "C3",
+    "participants": [
+      {
+        "id": 5,
+        "name": "Obi-Wan Kenobi"
+      },
+      {
+        "id": 6,
+        "name": "Luke Skywalker"
+      }
+    ]
+  }
+]
