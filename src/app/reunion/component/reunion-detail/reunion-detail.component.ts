@@ -24,13 +24,12 @@ export class ReunionDetailComponent implements OnInit {
     // Recover the reunion associated to the id in param
     const id = +this.route.snapshot.paramMap.get('id');
     this.getReunion(id);
-    // Init all fields
-    this.collectionSize = this.reunion.races.length;
+    console.log('FOUND' + id);
   }
 
   private getReunion(id: number): void {
     this.reunionService.getReunionById(id).subscribe({
-      next: val => this.initFields
+      next: val => this.initFields(val)
     });
   }
 

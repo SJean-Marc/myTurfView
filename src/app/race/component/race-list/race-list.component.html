@@ -11,7 +11,7 @@
         <input [(ngModel)]="listFilter" />
       </div>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="filteredRaces">
       <table class="table table-striped">
         <thead>
         <tr>
@@ -21,13 +21,17 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let race of filteredRaces ; index as i">
-          <th scope="row">{{ i + 1 }}</th>
+        <tr *ngFor="let race of filteredRaces | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize; index as i">
+          <th scope="row">{{ ((page-1) * pageSize)+ i + 1 }}</th>
           <td>{{race.name}}</td>
           <td>{{race.departureTime | date: "dd/MM/yyyy" }}</td>
         </tr>
         </tbody>
       </table>
+      <ngb-pagination
+        [(page)]="page"
+        [pageSize]="pageSize"
+        [collectionSize]="filteredRaces.length"></ngb-pagination>
     </div>
   </div>
 </div>
