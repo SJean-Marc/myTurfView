@@ -25,7 +25,7 @@
         <tr *ngFor="let reunion of filteredReunions ; index as i">
           <th scope="row">{{ i + 1 }}</th>
           <td>
-            <a [routerLink]="['/races', reunion.id]">
+            <a [routerLink]="['/reunions', reunion.id]">
               {{reunion.name}}
             </a>
           </td>

@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Race} from '../../race/model/race';
-import {Reunion} from '../model/reunion';
-import {ReunionService} from '../service/reunion.service';
+import {Race} from '../../../race/model/race';
+import {Reunion} from '../../model/reunion';
+import {ReunionService} from '../../service/reunion.service';
 
 @Component({
   selector: 'app-reunion-list',
